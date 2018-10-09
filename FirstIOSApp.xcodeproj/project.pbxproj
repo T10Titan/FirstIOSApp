@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8501934A216CEE9F00ED40BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85019349216CEE9F00ED40BE /* AppDelegate.swift */; };
-		8501934C216CEE9F00ED40BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8501934B216CEE9F00ED40BE /* ViewController.swift */; };
+		8501934C216CEE9F00ED40BE /* ColorChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8501934B216CEE9F00ED40BE /* ColorChangeViewController.swift */; };
 		8501934F216CEE9F00ED40BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8501934D216CEE9F00ED40BE /* Main.storyboard */; };
 		85019351216CEEA000ED40BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85019350216CEEA000ED40BE /* Assets.xcassets */; };
 		85019354216CEEA000ED40BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85019352216CEEA000ED40BE /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		85019346216CEE9F00ED40BE /* FirstIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85019349216CEE9F00ED40BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8501934B216CEE9F00ED40BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8501934B216CEE9F00ED40BE /* ColorChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeViewController.swift; sourceTree = "<group>"; };
 		8501934E216CEE9F00ED40BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85019350216CEEA000ED40BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85019353216CEEA000ED40BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,38 @@
 		85019348216CEE9F00ED40BE /* FirstIOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				85019349216CEE9F00ED40BE /* AppDelegate.swift */,
-				8501934B216CEE9F00ED40BE /* ViewController.swift */,
-				8501934D216CEE9F00ED40BE /* Main.storyboard */,
-				85019350216CEEA000ED40BE /* Assets.xcassets */,
-				85019352216CEEA000ED40BE /* LaunchScreen.storyboard */,
-				85019355216CEEA000ED40BE /* Info.plist */,
+				8501935B216CEF2C00ED40BE /* Resources */,
+				8501935D216CF0BA00ED40BE /* Controller */,
+				8501935C216CF09D00ED40BE /* View */,
 			);
 			path = FirstIOSApp;
+			sourceTree = "<group>";
+		};
+		8501935B216CEF2C00ED40BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85019349216CEE9F00ED40BE /* AppDelegate.swift */,
+				85019350216CEEA000ED40BE /* Assets.xcassets */,
+				85019355216CEEA000ED40BE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8501935C216CF09D00ED40BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8501934D216CEE9F00ED40BE /* Main.storyboard */,
+				85019352216CEEA000ED40BE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8501935D216CF0BA00ED40BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8501934B216CEE9F00ED40BE /* ColorChangeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8501934C216CEE9F00ED40BE /* ViewController.swift in Sources */,
+				8501934C216CEE9F00ED40BE /* ColorChangeViewController.swift in Sources */,
 				8501934A216CEE9F00ED40BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirstIOSApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirstIOSApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirstIOSApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirstIOSApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
